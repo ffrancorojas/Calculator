@@ -43,6 +43,7 @@ export const PanelButtonsContainer: React.FC = () => {
     if (buttonClicked === "=") return updateState({ rowsTextArea: [...rowsTextArea, `= ${acc}`], display: acc });
     updateState({ rowsTextArea: [...rowsTextArea, buttonClicked], display: 0, operator: buttonClicked });
   };
+  // Another change
   return (
     <>
       <main className={classes.calculatorStyles}>
