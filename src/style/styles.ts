@@ -1,22 +1,28 @@
 import { css } from "@emotion/css";
 export const mainCalculator = css`
-  width: 25rem;
+  width: 28rem;
 `;
 
 export const calculatorStyles = css`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 export const display = css`
+  background-color: rgb(192 192 192 / 45%);
+  border: 1px solid black;
+  border-radius: 4px;
   box-sizing: border-box;
   width: 100%;
   height: 2rem;
-  margin-bottom: 1rem;
   display: flex;
-  justify-content: center;
-  input {
-    text-align: right;
+  justify-content: flex-end;
+  align-items: center;
+
+  span {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 0.4rem;
   }
 `;
 
@@ -47,4 +53,7 @@ export const buttonsPanel = css`
   }
 `;
 
-export const textArea = css``;
+export const textArea = css`
+  background-color: rgb(192 192 192 / 45%);
+  border-radius: 4px;
+`;

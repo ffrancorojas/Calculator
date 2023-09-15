@@ -48,7 +48,8 @@ export const PanelButtonsContainer: React.FC = () => {
       <main className={classes.calculatorStyles}>
         <div>
           <div className={classes.display}>
-            <TextField type="number" id="standard-basic" variant="standard" value={display} onChange={(e) => setDisplay(Number(e.target.value))} />
+            <span>{display}</span>
+            {/* <TextField type="number" id="standard-basic" variant="standard" value={display} onChange={(e) => setDisplay(Number(e.target.value))} /> */}
           </div>
           <div className={classes.operatorButtons}>
             {operators.map((operator, index) => {
